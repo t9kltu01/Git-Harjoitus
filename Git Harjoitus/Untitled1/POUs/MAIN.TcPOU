@@ -13,7 +13,9 @@ END_IF
 
 fbLocalSystemTime();
 
-// This is comment]]></ST>
+// This is comment
+
+// This is another comment]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
