@@ -11,7 +11,9 @@ END_VAR
 	fbLocalSystemTime(bEnable := TRUE);
 END_IF
 
-fbLocalSystemTime();]]></ST>
+fbLocalSystemTime();
+
+// This is comment]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
