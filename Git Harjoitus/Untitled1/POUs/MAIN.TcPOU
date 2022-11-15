@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="MAIN" Id="{013889be-bda3-494b-9de3-9741a4c39185}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	fbLocalSystemTime		:FB_LocalSystemTime;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF _TaskInfo[GETCURTASKINDEXEX()].FirstCycle THEN
+	fbLocalSystemTime(bEnable := TRUE);
+END_IF
+
+fbLocalSystemTime();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
